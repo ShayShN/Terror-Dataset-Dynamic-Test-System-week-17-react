@@ -1,5 +1,5 @@
 import express from "express"
-// import routerComplaints from "./routes/complaints.routes.js"
+import routerGetData from "./routes.js"
 import cors from 'cors'
 
 import dotenv from "dotenv"
@@ -13,13 +13,7 @@ app.use(express.json())
 app.use(cors());
 
 
-// app.use("/api", routerComplaints)
-
-
-
-
-
-
+app.use("/api", routerGetData)
 
 
 
